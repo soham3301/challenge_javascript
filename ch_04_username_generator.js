@@ -4,12 +4,9 @@ const birthYear = Number(prompt(`Enter your birth year`));
 
 const createUsername = (fName, lName, bYear) => {
   let usernameStarter = `@`;
-  let lastTwoDigits = String(birthYear).slice(-2);
+  let lastTwoDigits = String(bYear).slice(-2);
   return (
-    usernameStarter +
-    firstName.toLowerCase() +
-    lastName.toLowerCase() +
-    lastTwoDigits
+    usernameStarter + fName.toLowerCase() + lName.toLowerCase() + lastTwoDigits
   );
 };
 
