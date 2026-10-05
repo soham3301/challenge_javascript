@@ -1,19 +1,19 @@
 const theMark = Number(prompt(`Enter Your Mark`));
 
-const calculateGrade = (mark) => {
-  if (mark < 0 || mark > 100) {
-    alert(`Invalid Input`);
-  } else if (mark >= 90 && mark <= 100) {
-    alert(`Grade A`);
-  } else if (mark >= 80 && mark < 90) {
-    alert(`Grade B`);
-  } else if (mark >= 70 && mark < 80) {
-    alert(`Grade C`);
-  } else if (mark >= 60 && mark < 70) {
-    alert(`Grade D`);
-  } else {
-    alert(`Grade F`);
-  }
+const calculateGrade = mark => {
+	if (mark < 0 || mark > 100) {
+		alert(`Invalid Input`);
+	} else if (mark >= 90 && mark <= 100) {
+		alert(`Grade A`);
+	} else if (mark >= 80 && mark < 90) {
+		alert(`Grade B`);
+	} else if (mark >= 70 && mark < 80) {
+		alert(`Grade C`);
+	} else if (mark >= 60 && mark < 70) {
+		alert(`Grade D`);
+	} else {
+		alert(`Grade F`);
+	}
 };
 
 calculateGrade(theMark);
