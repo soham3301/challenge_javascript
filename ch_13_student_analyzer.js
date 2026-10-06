@@ -1,31 +1,11 @@
 //? Challenge 13 - Student Analyzer
 
 const studentsForAnalyze = [
-	{
-		name: "Alice",
-		age: 21,
-		score: 87,
-	},
-	{
-		name: "Bob",
-		age: 19,
-		score: 55,
-	},
-	{
-		name: "Soham",
-		age: 20,
-		score: 77,
-	},
-	{
-		name: "Amitabh",
-		age: 22,
-		score: 39,
-	},
-	{
-		name: "Akash",
-		age: 18,
-		score: 62,
-	},
+	{ name: "Alice", age: 21, score: 87 },
+	{ name: "Bob", age: 19, score: 55 },
+	{ name: "Soham", age: 20, score: 77 },
+	{ name: "Amitabh", age: 22, score: 39 },
+	{ name: "Akash", age: 18, score: 62 },
 ];
 
 const PASSING_SCORE = 60;
@@ -49,7 +29,7 @@ const studentAnalyzer = (arr, p_score) => {
 			lowestScorer = arr[i]["name"];
 		}
 
-		p_score < arr[i]["score"] ? studentsPassed++ : studentsFailed++;
+		p_score <= arr[i]["score"] ? studentsPassed++ : studentsFailed++;
 		totalScore += arr[i]["score"];
 	}
 
